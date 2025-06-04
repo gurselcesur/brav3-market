@@ -1,0 +1,516 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Nintendo 64 Video Game Console",
+      "price": 113.16,
+      "amount": 2,
+      "image": "../product-images/gaming-console/nintendo64.jpg",
+      "category": "Game Consoles",
+      "description": "A retro item: Nintendo 64 Video Game Console",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Alex",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Good condition and fast delivery.",
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "userName": "Morgan",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Nintendo 64 Video Game Console Controller",
+      "price": 129.15,
+      "amount": 6,
+      "image": "../product-images/gaming-console/nintendo-64-video-game-console-controller.jpg",
+      "category": "Game Consoles",
+      "description": "A retro item: Nintendo 64 Video Game Console Controller",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Casey",
+          "text": "Packaging could be better, but the product is fine.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Morgan",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 5
+        },
+        {
+          "id": 1749027851430,
+          "userName": "J.Wick",
+          "text": "Nice!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "The Legend Of Zelda: Ocarina Of Time Nintendo 64 Game",
+      "price": 53.28,
+      "amount": 6,
+      "image": "../product-images/games/the-legend-of-zelda-ocarina-of-time-nintendo64-game.jpg",
+      "category": "Games",
+      "description": " Nintendo 64 Game: The Legend Of Zelda: Ocarina Of Time",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Bit pricey but worth it.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Morgan",
+          "text": "Packaging could be better, but the product is fine.",
+          "rating": 4
+        },
+        {
+          "id": 1749027212143,
+          "userName": "PewDiePie",
+          "text": "I love it!!",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Goldeneye 007 Nintendo64 Game",
+      "price": 123.77,
+      "amount": 10,
+      "image": "../product-images/games/goldeneye-007-nıntendo64-game.jpg",
+      "category": "Games",
+      "description": "A retro item: Goldeneye 007 Nintendo64 Game",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Morgan",
+          "text": "Bit pricey but worth it.",
+          "rating": 4
+        },
+        {
+          "id": 2,
+          "userName": "Jordan",
+          "text": "Bit pricey but worth it.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Nintendo Gameboy",
+      "price": 34.99,
+      "amount": 4,
+      "image": "../product-images/gaming-console/nintendo-gameboy.jpg",
+      "category": "Game Consoles",
+      "description": "A retro item: Nintendo Gameboy",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Morgan",
+          "text": "Bit pricey but worth it.",
+          "rating": 4
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 4
+        },
+        {
+          "id": 1747408442782,
+          "userName": "türkHorozu_34",
+          "text": "Super!!",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Nintendo Gameboy Color",
+      "price": 80.97,
+      "amount": 1,
+      "image": "../product-images/gaming-console/nintendo-gameboycolor.jpg",
+      "category": "Game Consoles",
+      "description": "A retro item: Nintendo Gameboy Color",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Bit pricey but worth it.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Alex",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 3
+        },
+        {
+          "id": 1747339347033,
+          "userName": "merco",
+          "text": "sevgilime aldım elinden düşmüyo metroda oynuyo 5 vakit elinden düşmüyo",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "The Legend Of Zelda: Link's Awakening",
+      "price": 87.14,
+      "amount": 10,
+      "image": "../product-images/games/the-legend-of-zelda-lınks-awakenıng-game boy-game.jpg",
+      "category": "Games",
+      "description": "A retro item: The Legend Of Zelda: Link's Awakening Game Boy Game",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Good condition and fast delivery.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Alex",
+          "text": "Packaging could be better, but the product is fine.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Pokemon Gold Game Boy Color Game",
+      "price": 51.25,
+      "amount": 5,
+      "image": "../product-images/games/pokemon-gold-game-boy-color-game.jpg",
+      "category": "Games",
+      "description": "A retro item: Pokemon Gold Game Boy Color Game",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Casey",
+          "text": "Good condition and fast delivery.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Morgan",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Original Tamagotchi",
+      "price": 105.19,
+      "amount": 6,
+      "image": "../product-images/gaming-console/orıgınal-tamagotchı.jpg",
+      "category": "Game Consoles",
+      "description": "A retro item: Original Tamagotchi",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Casey",
+          "text": "Packaging could be better, but the product is fine.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 5
+        },
+        {
+          "id": 1747339273927,
+          "userName": "elo",
+          "text": "kızıma aldım çok beğendi...\n",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Realistic-Concertmate-400-Synthesizer-Keyboard",
+      "price": 121.56,
+      "amount": 4,
+      "image": "../product-images/music/realıstıc-concertmate-400-synthesızer-keyboard.jpg",
+      "category": "Music",
+      "description": "A retro item: Realistic-Concertmate-400-Synthesizer-Keyboard",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 4
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Good condition and fast delivery.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Casio Pt-1 Pastel Synthesizer Keyboard",
+      "price": 109.81,
+      "amount": 6,
+      "image": "../product-images/music/casıo-pt1-pastel-synthesızer-keyboard.jpg",
+      "category": "Music",
+      "description": "A retro item: Casio Pt-1 Pastel Synthesizer Keyboard",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Yamaha Portasound Pss-110 Synthesizer",
+      "price": 22.7,
+      "amount": 6,
+      "image": "../product-images/music/yamaha-portasound-pss-110-synthesizer-keyboard.jpg",
+      "category": "Music",
+      "description": "A retro item: Yamaha Portasound Pss-110 Synthesizer Keyboard",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Taylor",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Apple Ipod Mini (1st Generation) Mp3 Player",
+      "price": 31.53,
+      "amount": 7,
+      "image": "../product-images/music/apple-ipod-mini-1st-generation-mp3-player.jpg",
+      "category": "Music",
+      "description": "A retro item: Apple Ipod Mini (1st Generation) Mp3 Player",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Morgan",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Koss Kph/6 On-Ear Headphones",
+      "price": 98.99,
+      "amount": 8,
+      "image": "../product-images/music/koss-kph6-headphones.jpg",
+      "category": "Music",
+      "description": "A retro item: Koss Kph/6 On-Ear Headphones",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Casey",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "userName": "Morgan",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Block Mechanical Keyboard",
+      "price": 85.77,
+      "amount": 1,
+      "image": "../product-images/keyboard/block-mechanical-keyboard.jpg",
+      "category": "Keyboard",
+      "description": "A retro item: Block Mechanical Keyboard",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Good condition and fast delivery.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Bit pricey but worth it.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Butter Keyboard",
+      "price": 86.38,
+      "amount": 1,
+      "image": "../product-images/keyboard/butter-keyboard.jpg",
+      "category": "Keyboard",
+      "description": "A retro item: Butter Keyboard",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Jordan",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 4
+        },
+        {
+          "id": 2,
+          "userName": "Taylor",
+          "text": "Good condition and fast delivery.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Apple Magicboard Gen1",
+      "price": 64.32,
+      "amount": 5,
+      "image": "../product-images/keyboard/apple-magicboard-gen1.jpg",
+      "category": "Keyboard",
+      "description": "A retro item: Apple Magicboard Gen1",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Alex",
+          "text": "Good condition and fast delivery.",
+          "rating": 3
+        },
+        {
+          "id": 2,
+          "userName": "Casey",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Rk Royal Kludge",
+      "price": 62.8,
+      "amount": 5,
+      "image": "../product-images/keyboard/rk-royal-kludge.jpg",
+      "category": "Keyboard",
+      "description": "A retro item: Rk Royal Kludge",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Casey",
+          "text": "Works perfectly and feels like the old days.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Jordan",
+          "text": "Packaging could be better, but the product is fine.",
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "userName": "Morgan",
+          "text": "Absolutely love it! Great nostalgia.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Te Keyboard2",
+      "price": 40.41,
+      "amount": 8,
+      "image": "../product-images/keyboard/te-keyboard2.jpg",
+      "category": "Keyboard",
+      "description": "A retro item: Te Keyboard2",
+      "reviews": [
+        {
+          "id": 1,
+          "userName": "Casey",
+          "text": "Bit pricey but worth it.",
+          "rating": 5
+        },
+        {
+          "id": 2,
+          "userName": "Morgan",
+          "text": "Good condition and fast delivery.",
+          "rating": 5
+        },
+        {
+          "id": 3,
+          "userName": "Taylor",
+          "text": "Bit pricey but worth it.",
+          "rating": 5
+        }
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "3095",
+      "productId": "3",
+      "discountRate": 15
+    },
+    {
+      "id": "33b7",
+      "productId": "5",
+      "discountRate": 10
+    },
+    {
+      "id": "10f9",
+      "productId": "11",
+      "discountRate": 20
+    },
+    {
+      "id": "6820",
+      "productId": "8",
+      "discountRate": 10
+    },
+    {
+      "id": "9e14",
+      "productId": "13",
+      "discountRate": 25
+    },
+    {
+      "id": "8398",
+      "productId": "9",
+      "discountRate": 20
+    }
+  ],
+  "shoppingcart": []
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Pixelify;
+    font-style: normal;
+    src: url('../app/assets/fonts/Pixelify.ttf')
+}
+
+@font-face {
+    font-family: vt323;
+    font-style: normal;
+    src: url('../app/assets/fonts/VT323.ttf')
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-pixelify: Pixelify;
+    --font-vt323: vt323;
+}
+
+body {
+    @apply text-green-500 font-vt323;
+}
+
+h1,
+h2,
+h3 {
+    @apply font-pixelify;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    position: relative;
+    min-width: 30%;
+    overflow: hidden;
+    
+}
+
+.embla__slide__inner {
+    position: relative;
+    width: 100%;
+    min-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.embla__slide__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
