@@ -4,8 +4,6 @@ Brav3 Market is a modern e-commerce platform for retro electronics, built with N
 
 > 🎓 **Learning Project**: This project is designed to help developers learn and practice modern web development technologies. It demonstrates best practices in React, Next.js, and Tailwind CSS implementation.
 
-![Brav3 Market](public/og-image.jpg)
-
 ## 🌍 Live Demo
 
 [Click here to visit Brav3 Market 🚀](https://brav3-market.vercel.app)
