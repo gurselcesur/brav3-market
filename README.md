@@ -45,7 +45,7 @@ npm install
 
 3. Start the development server and JSON server:
 ```bash
-npm run all
+npm run dev
 ```
 
 This command will start both the Next.js development server and JSON server concurrently.
