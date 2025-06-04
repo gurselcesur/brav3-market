@@ -2,7 +2,7 @@
 
 Brav3 Market is a modern e-commerce platform for retro electronics, built with Next.js 13+ and Tailwind CSS. This project is created as a learning exercise to master modern web development technologies including React, Next.js, and Tailwind CSS.
 
-> 🎓 **Learning Project**: This project is designed to help developers learn and practice modern web development technologies. It demonstrates best practices in React, Next.js, and Tailwind CSS implementation.
+> 🎓 **Learning Project**: This project was built as a personal learning experience to improve my own skills in modern web development. It allowed me to practice and explore technologies like React, Next.js, and Tailwind CSS through hands-on implementation.
 
 ## 🌍 Live Demo
 
