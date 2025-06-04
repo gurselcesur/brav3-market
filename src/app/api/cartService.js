@@ -1,34 +1,54 @@
-const BASE_URL = "http://localhost:8000";
+const CART_KEY = 'brav3-cart';
+
+function getCartFromStorage() {
+  if (typeof window === 'undefined') return [];
+  const cart = localStorage.getItem(CART_KEY);
+  return cart ? JSON.parse(cart) : [];
+}
+
+function saveCartToStorage(cart) {
+  if (typeof window === 'undefined') return;
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+}
 
 export async function getCart() {
-  const res = await fetch(`${BASE_URL}/shoppingcart`);
-  if (!res.ok) throw new Error("Failed to fetch cart items");
-  return res.json();
+  return getCartFromStorage();
 }
 
 export async function addToCart({ productId, amount }) {
-  const res = await fetch(`${BASE_URL}/shoppingcart`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ productId, amount })
-  });
-  if (!res.ok) throw new Error("Failed to add item to cart");
-  return res.json();
+  const cart = getCartFromStorage();
+  const existingItem = cart.find(item => item.productId === productId);
+
+  if (existingItem) {
+    existingItem.amount += amount;
+  } else {
+    cart.push({
+      id: Date.now(),
+      productId,
+      amount
+    });
+  }
+
+  saveCartToStorage(cart);
+  return cart;
 }
 
 export async function removeFromCart(id) {
-  const res = await fetch(`${BASE_URL}/shoppingcart/${id}`, {
-    method: "DELETE"
-  });
-  if (!res.ok) throw new Error("Failed to remove item from cart");
+  const cart = getCartFromStorage();
+  const newCart = cart.filter(item => item.id !== id);
+  saveCartToStorage(newCart);
+  return { id };
 }
 
 export async function updateCartItem(id, { productId, amount }) {
-  const res = await fetch(`${BASE_URL}/shoppingcart/${id}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ productId, amount })
-  });
-  if (!res.ok) throw new Error("Failed to update cart item");
-  return res.json();
+  const cart = getCartFromStorage();
+  const item = cart.find(item => item.id === id);
+  
+  if (!item) throw new Error("Cart item not found");
+  
+  item.productId = productId;
+  item.amount = amount;
+  
+  saveCartToStorage(cart);
+  return item;
 }

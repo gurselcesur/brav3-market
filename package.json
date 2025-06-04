@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "json-server": "json-server --watch data.json --port 8000",
-    "all": "npm-run-all --parallel dev json-server"
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.5",
@@ -25,7 +23,6 @@
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
     "@types/react": "19.1.6",
-    "json-server": "^1.0.0-beta.3",
     "typescript": "5.8.3"
   }
 }

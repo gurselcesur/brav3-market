@@ -1,23 +1,46 @@
-const BASE_URL = "http://localhost:8000";
+const CAMPAIGNS_KEY = 'brav3-campaigns';
+
+function getCampaignsFromStorage() {
+  if (typeof window === 'undefined') return [];
+  const campaigns = localStorage.getItem(CAMPAIGNS_KEY);
+  return campaigns ? JSON.parse(campaigns) : [];
+}
+
+function saveCampaignsToStorage(campaigns) {
+  if (typeof window === 'undefined') return;
+  localStorage.setItem(CAMPAIGNS_KEY, JSON.stringify(campaigns));
+}
 
 export async function getCampaigns() {
-  const res = await fetch(`${BASE_URL}/campaigns`);
+  // Önce localStorage'dan kontrol et
+  const cachedCampaigns = getCampaignsFromStorage();
+  if (cachedCampaigns.length > 0) {
+    return cachedCampaigns;
+  }
+
+  // localStorage boşsa data.json'dan oku
+  const res = await fetch('/data.json');
   if (!res.ok) throw new Error("Failed to fetch campaigns");
-  return res.json();
+  const data = await res.json();
+  
+  // data.json'dan gelen verileri localStorage'a kaydet
+  saveCampaignsToStorage(data.campaigns);
+  return data.campaigns;
 }
 
 export async function getCampaignById(id) {
-  const res = await fetch(`${BASE_URL}/campaigns/${id}`);
-  if (!res.ok) throw new Error("Campaign not found");
-  return res.json();
+  const campaigns = await getCampaigns();
+  return campaigns.find(campaign => campaign.id === id);
 }
 
 export async function createCampaign(campaign) {
-  const res = await fetch(`${BASE_URL}/campaigns`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(campaign)
-  });
-  if (!res.ok) throw new Error("Failed to create campaign");
-  return res.json();
+  const campaigns = await getCampaigns();
+  const newCampaign = {
+    ...campaign,
+    id: Date.now()
+  };
+  
+  campaigns.push(newCampaign);
+  saveCampaignsToStorage(campaigns);
+  return newCampaign;
 }
