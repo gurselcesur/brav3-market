@@ -26,6 +26,10 @@ const Header = () => {
         return () => clearInterval(interval);
     }, [refreshCart]);
 
+    const handleMenuClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-4 bg-black border-b-3 border-green-500 relative">
             <div className="flex items-center justify-between w-full md:w-auto">
@@ -55,10 +59,18 @@ const Header = () => {
 
             {isMenuOpen && (
                 <div className="flex flex-col gap-2 mt-2 md:hidden">
-                    <Link href="/campaign/add" className="text-xl font-pixelify hover:text-green-400 border border-green-500 p-2 rounded-md">
+                    <Link 
+                        href="/campaign/add" 
+                        className="text-xl font-pixelify hover:text-green-400 border border-green-500 p-2 rounded-md"
+                        onClick={handleMenuClick}
+                    >
                         Add Campaign
                     </Link>
-                    <Link href="/cart" className="flex items-center text-xl font-pixelify gap-2 hover:text-green-400 border border-green-500 p-2 rounded-md relative">
+                    <Link 
+                        href="/cart" 
+                        className="flex items-center text-xl font-pixelify gap-2 hover:text-green-400 border border-green-500 p-2 rounded-md relative"
+                        onClick={handleMenuClick}
+                    >
                         Shopping Cart
                         <MdOutlineShoppingCart size={25} />
                         {cartItemCount > 0 && (

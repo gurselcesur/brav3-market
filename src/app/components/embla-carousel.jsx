@@ -32,18 +32,20 @@ const EmblaCarousel = () => {
 
   return (
     <div className="embla overflow-hidden m-6" ref={emblaRef}>
-      <div className="embla__container flex gap-4 px-4">
+      <div className="embla__container flex gap-2 px-2">
         {discountedProducts.map(product => (
           <Link
             href={`/product/${product.id}`}
             key={product.id}
-            className="embla__slide min-w-[200px] relative rounded-lg overflow-hidden border-4 border-green-500 cursor-pointer block"
+            className="embla__slide w-[85vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] xl:w-[25vw] flex-shrink-0 relative rounded-xl overflow-hidden cursor-pointer block"
           >
-            <img
-              src={product.image}
-              alt={product.title}
-              className="w-full h-100 object-cover"
-            />
+            <div className="relative w-full aspect-[3/4]">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
             <div className="absolute top-2 left-2 bg-green-500 text-white px-2 py-2 text-3xl rounded">
               SALE! {100 - (product.discountedPrice / product.price * 100).toFixed(0)}% OFF
             </div>

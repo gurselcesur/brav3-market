@@ -10,18 +10,18 @@ const SearchFilters = ({
   products 
 }) => {
   return (
-    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 px-4 mt-6 text-center">
+    <div className="flex flex-wrap justify-center items-center gap-4 px-4 mt-6 text-center">
       <input
         type="text"
         placeholder="Search products..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="p-2 border border-green-500 rounded bg-black text-green-400"
+        className="p-2 border border-green-500 rounded bg-black text-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
       />
       <select
         value={categorySort}
         onChange={(e) => setCategorySort(e.target.value)}
-        className="p-2 border border-green-500 rounded bg-black text-green-400"
+        className="p-2 border border-green-500 rounded bg-black text-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
       >
         <option value="">All Categories</option>
         {[...new Set(products.map(p => p.category))].map(cat => (
@@ -31,7 +31,7 @@ const SearchFilters = ({
       <select
         value={priceSort}
         onChange={(e) => setPriceSort(e.target.value)}
-        className="p-2 border border-green-500 rounded bg-black text-green-400"
+        className="p-2 border border-green-500 rounded bg-black text-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
       >
         <option value="">Sort by Price</option>
         <option value="high">Price: High to Low</option>

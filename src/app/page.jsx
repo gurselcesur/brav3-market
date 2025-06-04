@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import ProductCard from './components/product-card';
 import EmblaCarousel from './components/embla-carousel';
 import SearchFilters from './components/search-filters';
+import SaleBanner from './components/sale-banner';
 import { useProducts } from './hooks/useProducts';
 
 const Page = () => {
@@ -25,6 +26,7 @@ const Page = () => {
   return (
     <div>
       <EmblaCarousel />
+      <SaleBanner />
       <SearchFilters
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}

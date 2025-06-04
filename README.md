@@ -6,6 +6,12 @@ Brav3 Market is a modern e-commerce platform for retro electronics, built with N
 
 ![Brav3 Market](public/og-image.jpg)
 
+## 🌍 Live Demo
+
+[Click here to visit Brav3 Market 🚀](https://brav3-market.vercel.app)
+
+Explore the live version of the app deployed on Vercel. Browse retro consoles, music gear, and more!
+
 ## 🚀 Features
 
 - 🎮 Retro gaming consoles and games
